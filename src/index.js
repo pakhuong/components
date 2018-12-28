@@ -1,3 +1,4 @@
+import faker from 'faker';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -6,7 +7,7 @@ const App = () => {
         <div className="ui container comments">
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="avatar"></img>
+                    <img alt="avatar" src={faker.image.avatar()}></img>
                 </a>
                 <div className="content">
                     <a href="/" className="author">
